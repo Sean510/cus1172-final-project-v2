@@ -5,24 +5,24 @@ var updateView = async (button) => {
 
     if (button.dataset.querytype == 'by_instructor') {
         let queryValue = document.querySelector('#instructorQuery').value;
-        api = `http://localhost:3000/api/by_instructor/${queryValue}`;
+        api = `https://cus1172-final-project-api.herokuapp.com/api/by_instructor/${queryValue}`;
     
     } else if (button.dataset.querytype == 'by_code') {
         let queryValue = document.querySelector('#codeQuery').value;
-        api = `http://localhost:3000/api/by_course_code/${queryValue}`;
+        api = `https://cus1172-final-project-api.herokuapp.com/api/by_course_code/${queryValue}`;
     
     } else if (button.dataset.querytype == 'by_level') {
         let queryValue = document.querySelector('#levelQuery').value;
-        api = `http://localhost:3000/api/by_level/${queryValue}`;
+        api = `https://cus1172-final-project-api.herokuapp.com/api/by_level/${queryValue}`;
     
     } else if (button.dataset.querytype == 'by_title') {
         let queryValue = document.querySelector('#titleQuery').value;
-        api = `http://localhost:3000/api/by_title/${queryValue}`;
+        api = `https://cus1172-final-project-api.herokuapp.com/api/by_title/${queryValue}`;
     
     } else if (button.dataset.querytype == 'by_combination') {
         let nameValue = document.querySelector('#nameQuery').value;
         let levelValue = document.querySelector('#cLevelQuery').value;
-        api = `http://localhost:3000/api/combined_query/${nameValue}/${levelValue}`; 
+        api = `https://cus1172-final-project-api.herokuapp.com/api/combined_query/${nameValue}/${levelValue}`; 
     }
     const data = await fetch(api);
     const model = await data.json();
