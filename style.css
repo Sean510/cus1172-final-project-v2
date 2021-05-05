@@ -1,0 +1,74 @@
+ body {
+     background-color:#051c2c;
+     color:white;
+     
+ }
+
+ img {
+     width:200px;
+     height:auto;
+ }
+
+ h3{
+    font-family:courier new;
+    text-align:center;
+    text-decoration:underline;
+}
+
+
+ li {
+     font-size:14px;
+    font-family:courier new;
+    display:inline-block;
+    width:max-content;
+ }
+
+ ul {
+     list-style-type:none;
+ }
+
+ input[type=text] {
+     background-color:#051c2c;
+     border-color:white;
+     color:white;
+ }
+
+ .page-header {
+    font-family:courier new;
+    text-align:center;
+    text-decoration:underline;
+}
+
+ .btn-primary, btn-primary:active, .btn-primary:visited {
+     outline-color:black;
+     color:black;
+     border-color:black;
+     background-color:white;
+     margin-right:40px;
+ }
+
+ .btn-primary:hover {
+     background-color:lightgray;
+     border-color:black;
+     color:black;
+ }
+
+ .second-label {
+     padding-left:140px;
+ }
+
+ .third-label {
+    padding-left:120px;
+ }
+
+ .fourth-label {
+     padding-left:125px;
+ }
+
+ #logo {
+    position:fixed;
+    top:0;
+    left:0;
+ }
+
+ 
