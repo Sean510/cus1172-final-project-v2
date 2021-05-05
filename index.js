@@ -1,4 +1,4 @@
-// app_code_dev.js
+// index.js
 
 
 var updateView = async (button) => {
