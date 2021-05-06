@@ -1,0 +1,25 @@
+{
+    "name": "cus1172-final-project",
+    "version": "1.0.0",
+    "description": "node app ",
+    "main": "app.js",
+    "scripts": {
+    "start": "node app.js"
+  },
+    "repository": {
+    "type": "git",
+    "url": ""
+  },
+    "author": "Sean White",
+    "license": "ISC",
+    "bugs": {
+    "url": ""
+  },
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.15.2",
+    "cors": "^2.8.5"
+  },
+    "homepage": ""
+  }
+© 2021 GitHub, Inc.
