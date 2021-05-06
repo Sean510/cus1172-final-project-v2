@@ -25,7 +25,7 @@ var updateView = async (button) => {
         api = `https://cus1172-final-project-api.herokuapp.com/api/combined_query/${nameValue}/${levelValue}`; 
     }
     const data = await fetch(api,{"mode":"no-cors"}).then((res) => {
-        return res.json()
+        return res.json();
     });
     render_view(data);
 }
