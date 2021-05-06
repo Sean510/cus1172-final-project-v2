@@ -24,9 +24,10 @@ var updateView = async (button) => {
         let levelValue = document.querySelector('#cLevelQuery').value;
         api = `https://cus1172-final-project-api.herokuapp.com/api/combined_query/${nameValue}/${levelValue}`; 
     }
-    const data = await fetch(api,{"mode":"no-cors"});
-    const model = await data.json();
-    render_view(model);
+    const data = await fetch(api,{"mode":"no-cors"}).then((res) => {
+        return res.json()
+    });
+    render_view(data);
 }
 
 var render_view = (model) => {
