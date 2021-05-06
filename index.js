@@ -24,7 +24,7 @@ var updateView = async (button) => {
         let levelValue = document.querySelector('#cLevelQuery').value;
         api = `https://cus1172-final-project-api.herokuapp.com/api/combined_query/${nameValue}/${levelValue}`; 
     }
-    const data = await fetch(api);
+    const data = await fetch(api,{"Access-Control-Allow-Origin": "*"});
     const model = await data.json();
     render_view(model);
 }
