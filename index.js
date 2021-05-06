@@ -26,7 +26,7 @@ var updateView = async (button) => {
     }
     const data = fetch(api,{mode:"no-cors"})
     .then(response => response.json())
-    .then(data => return data);
+    .then(data => {return data});
     render_view(data);
 }
 
